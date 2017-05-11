@@ -1,0 +1,9 @@
+<h2 class="text-center">Modify user form :</h2>
+<form name="user" class="form">
+	<div class="form-group">Nom :<input class="form-control" type="text" name="nom" ng-model="userToModify.nom" required=""/></div>
+	<div class="form-group">Prenom :<input class="form-control" type="text" name="prenom" ng-model="userToModify.prenom" required="" /></div>
+	<div class="form-group">Email :<input class="form-control" type="email" name="email" ng-model="userToModify.email" required=""/></div>
+	<div class="form-group">
+	<input class="form-control btn btn-success" class="form-control" type="button" name="addUser" value = "Modify" ng-click="modifyUser()" ng-disabled = "user.$invalid"/>
+	</div>
+</form>
